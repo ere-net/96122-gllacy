@@ -38,6 +38,16 @@ body {
   background-color: #849d8f;
 }
 
+h1 {
+  font: 700 35px/1.2 "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+h2 {
+  font: 500 24px/1.25 "Roboto", "Arial", sans-serif;
+  color: #323232;
+}
+
 .wrapper__content {
   width: 900px;
   margin: 0 auto;
