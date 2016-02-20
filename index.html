@@ -197,7 +197,7 @@
           <div class="about__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</div>
           <div class="about__block">
             <div class="about__item  about__item--icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</div>
-            <div class="about__item  about__item--cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</div>
+            <div class="about__item  about__item--cow">Закупка ингредиентов  производится только у&nbsp;проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</div>
             <div class="about__item  about__item--leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья. </div>
             <div class="about__item  about__item--thermo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</div>
           </div>
@@ -205,15 +205,19 @@
 
         <section class="news">
           <article class="blog">
+            <div class="blog__inner">
+              <div class="blog__descr">Новое в нашем блоге</div>
+              <div class="blog__title">
+                <a href="#">10  способов сервировки фруктовых щербетов к&nbsp;столу</a>
+              </div>
+            </div>
             <img class="blog__img" src="img/bg-blog.png" width="420" height="220">
-            <span class="blog__descr">Новое в нашем блоге</span>
-            <a class="blog__title" href="#">10  способов сервировки фруктовых щербетов к столу</a>
           </article>
           <article class="subscribe">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+            <p>Подпишитесь на нашу сладкую рассылку и&nbsp;будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="field-text" type="email" placeholder="Электронная почта" required>
-              <button class="btn" type="submit">Отправить</button>
+              <button class="btn  btn--send" type="submit">Отправить</button>
             </form>
           </article>
         </section>
@@ -222,15 +226,15 @@
 
       <section class="map" id="map">
         <div class="contacts">
-          <p>Адрес главного офиса и офлайн магазина:<br>
+          <p>Адрес главного офиса и<br> офлайн магазина:<br>
             <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
           </p>
           <p>Для заказов по телефону:<br>
             <b>8 812 450-25-25</b><br>
             (с 10 до 20 ежедневно)
           </p>
+          <a class="btn  btn--feedback" href="#">Форма обратной связи</a>
         </div>
-        <a class="btn  btn--contacts" href="#">Форма обратной связи</a>
       </section>
 
       <div class="wrapper__content">
@@ -259,14 +263,19 @@
     </div>
 
     <div class="feedback">
-      <div class="feedback__close">x</div>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="field-text" type="text" name="feedback-author" id="feedback-author" placeholder="Как вас зовут?">
-        <input class="field-text" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-        <textarea class="field-textarea"  name="feedback-comment" id="feedback-comment" rows="6" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="btn" type="submit">Отправить</button>
-      </form>
+      <div class="feedback__inner">
+        <div class="feedback__close">x</div>
+        <div class="feedback__title">Мы обязательно вам ответим!</div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="field-text" type="text" name="feedback-author" id="feedback-author" placeholder="Как вас зовут?" required>
+          <input class="field-text" type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+          <textarea class="field-textarea"  name="feedback-comment" id="feedback-comment" rows="6" placeholder="Напишите что-нибудь..." required></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
 
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
