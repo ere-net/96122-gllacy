@@ -25,10 +25,6 @@
     myMap.geoObjects.add(myPlacemark);
   }
 
-})();
-
-(function () {
-
   if (document.querySelector(".btn--feedback")) {
 
   var feedback = document.querySelector(".btn--feedback");
