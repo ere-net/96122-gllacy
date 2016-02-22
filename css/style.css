@@ -207,6 +207,18 @@ input:focus:-ms-input-placeholder {
   }
 }
 
+@-webkit-keyframes opacity {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
 h1 {
   font: 700 35px/1.2 "Roboto", "Arial", sans-serif;
   color: #ffffff;
@@ -745,7 +757,7 @@ h2 {
 
 .slider {
   position: relative;
-  padding-top: 264px;
+  padding-top: 274px;
   text-align: center;
   color: #ffffff;
 }
@@ -923,6 +935,8 @@ h2 {
 
 .goods:hover .goods__quick-view {
   display: block;
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
 }
 
 .goods:hover:after {
@@ -936,6 +950,8 @@ h2 {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  -webkit-animation: opacity 0.3s linear;
+  animation: opacity 0.3s linear;
 }
 
 .goods--hit:before {
@@ -1210,7 +1226,6 @@ h2 {
 .map {
   position: relative;
   width: 100%;
-  max-width: 900px;
   margin: 0 auto;
   height: 430px;
   background: url("../img/map.jpg") no-repeat 50% 0;
@@ -1218,9 +1233,16 @@ h2 {
 }
 
 .contacts {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contacts__inner {
   position: absolute;
   z-index: 20;
-  top: 65px;
+  top: -366px;
   right: 20px;
   width: 302px;
   padding: 29px 25px 30px 26px;
