@@ -574,13 +574,13 @@ h2 {
 
 .user-block__link svg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 
   fill: #ffffff;
+}
+
+.user-block__link--search svg {
+  top: 7px;
+  left: 8px;
 }
 
 .user-block__link--login {
@@ -594,11 +594,8 @@ h2 {
 
 .user-block__link--login svg,
 .user-block__link--cart svg {
-  top: 50%;
+  top: 6px;
   left: 16px;
-
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
 }
 
 .user-block__item:hover svg {
@@ -1917,7 +1914,8 @@ textarea:not(:focus):valid + .label-box label {
 
 .field-select {
   width: 120%;
-  padding: 7px 15px 0 15px;
+  height: 36px;
+  padding: 0 15px 0 15px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1927,6 +1925,8 @@ textarea:not(:focus):valid + .label-box label {
   background-color: transparent;
   border: none;
   outline: none;
+
+  -webkit-appearance: none;
 }
 
 .filter__sorting:hover {
